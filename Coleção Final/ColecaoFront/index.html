@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CATALOGOS POKÉMON</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <header><h1>CATALOGOS POKÉMON</h1></header>
+        <main class="container"><!--remove -->
+            <section class="form" id='form'>
+                <form>
+                    <label for="pokename">Nome do pokemon</label>
+                    <input type="text" id="pokeName" placeholder="Nome do pokemon">
+                    <label for="generation">Geração do pokemon</label>
+                    <input type="text" id="pokeGen" placeholder="Geração do pokemon">
+                    <label for="tipo">Tipo do pokemon</label>
+                    <input type="text" id="pokeTipo" placeholder="Tipo do pokemon">
+                    <label for="url">Imagem da carta do pokemon</label>
+                    <input type="text" id="pokeImage" placeholder="URL da imagem">
+                    <button id="createCard" onclick="createCard()"><b> Adicionar Carta</b></button>
+                    <button id="updateCard" onclick="sendUpdate()"><b> Atualizar Carta</b></button>
+                </form>
+            </section>
+            <section id="cardSection"></section>
+        </main>
+    </body>
+</html>
